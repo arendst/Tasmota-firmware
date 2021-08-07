@@ -1,0 +1,29 @@
+
+name: Copy_firmware
+
+on:
+  workflow_dispatch:  # Manually start a workflow
+  push:
+    branches: main
+    paths-ignore:
+    - '.github/**' # Ignore changes towards the .github directory
+
+jobs:
+  firmware_pull:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - uses: actions/checkout@v2
+    - name: Copy Tasmota firmware
+      run: |
+        git config --local user.name "Platformio BUILD"
+        git config user.email github-actions@github.com
+        git switch -c work
+        git remote add -f Tasmota "https://github.com/arendst/Tasmota.git" --track firmware_delete
+        git merge Tasmota/firmware_delete --allow-unrelated-histories
+    - name: Push Firmware
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: 'main'
+        force: true
