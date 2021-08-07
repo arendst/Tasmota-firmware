@@ -20,6 +20,6 @@ jobs:
         git config user.email github-actions@github.com
         git remote add -f Tasmota "https://github.com/arendst/Tasmota.git" --track firmware_delete
         git config merge.renameLimit 999999
-        git pull upstream main
+        git pull upstream main --allow-unrelated-histories
         git push origin main
         git merge Tasmota/firmware_delete --allow-unrelated-histories
