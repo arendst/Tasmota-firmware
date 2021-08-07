@@ -18,12 +18,8 @@ jobs:
       run: |
         git config --local user.name "Platformio BUILD"
         git config user.email github-actions@github.com
-        git switch -c work
         git remote add -f Tasmota "https://github.com/arendst/Tasmota.git" --track firmware_delete
+        git config merge.renameLimit 999999
+        git pull upstream main
+        git push origin main
         git merge Tasmota/firmware_delete --allow-unrelated-histories
-    - name: Push Firmware
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: 'main'
-        force: true
