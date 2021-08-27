@@ -23,7 +23,7 @@ jobs:
           dst_branch: main
           dst_repo_name: install
           username: workflow
-          commit_message: "Update from unofficial builder"
+          commit_message: "Update from official repo"
   copycat32:
     runs-on: ubuntu-latest
     steps:
@@ -39,4 +39,4 @@ jobs:
           dst_branch: main
           dst_repo_name: install
           username: workflow
-          commit_message: "Update from unofficial builder"
+          commit_message: "Update from official repo"
