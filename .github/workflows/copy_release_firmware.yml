@@ -3,6 +3,8 @@ name: Copy_firmware_master
 on:
   push: 
     branches: action-master
+    paths-ignore:
+    - '.github/**' # Ignore changes towards the .github directory
 
 jobs:
   copycat:
@@ -23,6 +25,7 @@ jobs:
           commit_message: "Update from official release"
 
   copycat32:
+    needs: copycat
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
