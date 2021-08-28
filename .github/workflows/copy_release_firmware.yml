@@ -1,7 +1,9 @@
 name: Copy_firmware_master
 
 on:
-  push: action-master
+  push: 
+    branches: action-master
+
 jobs:
   copycat:
     runs-on: ubuntu-latest
