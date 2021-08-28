@@ -42,3 +42,23 @@ jobs:
           dst_repo_name: install
           username: workflow
           commit_message: "Update from development"
+
+  Special_builder:
+    needs: copycat32
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Creat trigger.txt
+        run: |
+           echo ${GITHUB_SHA}  &> trigger.txt
+           echo "$(<trigger.txt)"
+      - name: Push trigger.txt to start workflow in repo https://github.com/Jason2866/Tasmota-specials
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: 'trigger.txt'
+          destination_repo: 'Jason2866/Tasmota-specials'
+          destination_branch: 'start_build'
+          user_email: 'github-actions@github.com'
+          user_name: 'github-actions'
