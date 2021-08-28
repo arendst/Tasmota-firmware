@@ -1,0 +1,44 @@
+
+name: Copy_firmware_development
+
+on:
+  push: 
+    branches: action-development
+    paths-ignore:
+    - '.github/**' # Ignore changes towards the .github directory
+
+jobs:
+  copycat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: copycat tasmota
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.API_TOKEN_GITHUB }}
+          src_path: firmware/tasmota/.
+          src_branch: main
+          dst_path: /firmware/development/
+          dst_owner: tasmota
+          dst_branch: main
+          dst_repo_name: install
+          username: workflow
+          commit_message: "Update from development"
+
+  copycat32:
+    needs: copycat
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: copycat tasmota32
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.API_TOKEN_GITHUB }}
+          src_path: firmware/tasmota32/.
+          src_branch: main
+          dst_path: /firmware/development/
+          dst_owner: tasmota
+          dst_branch: main
+          dst_repo_name: install
+          username: workflow
+          commit_message: "Update from development"
