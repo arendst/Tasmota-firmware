@@ -14,7 +14,7 @@ jobs:
         with:
           personal_token: ${{ secrets.API_TOKEN_GITHUB }}
           src_path: release-firmware/tasmota/.
-          src_branch: master
+          src_branch: main
           dst_path: /firmware/release/
           dst_owner: tasmota
           dst_branch: main
@@ -31,7 +31,7 @@ jobs:
         with:
           personal_token: ${{ secrets.API_TOKEN_GITHUB }}
           src_path: release-firmware/tasmota32/.
-          src_branch: master
+          src_branch: main
           dst_path: /firmware/release/
           dst_owner: tasmota
           dst_branch: main
