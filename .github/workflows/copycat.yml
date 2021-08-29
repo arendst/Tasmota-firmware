@@ -24,7 +24,9 @@ jobs:
           dst_repo_name: install
           username: workflow
           commit_message: "Update from official repo"
+
   copycat32:
+    needs: copycat
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
