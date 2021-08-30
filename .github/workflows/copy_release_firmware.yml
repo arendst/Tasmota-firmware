@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Build commit message
+        id: step_one
+        run: |
+          tas_com_tmp1=$(curl https://raw.githubusercontent.com/arendst/Tasmota-firmware/action-master/trigger.txt)
+          tas_com_tmp="Update from https://github.com/arendst/Tasmota/commit/${tas_com_tmp1}"
+          echo "tas_com=$tas_com_tmp" >> $GITHUB_ENV  
       - name: copycat tasmota
         uses: andstor/copycat-action@v3
         with:
@@ -22,13 +28,19 @@ jobs:
           dst_branch: main
           dst_repo_name: install
           username: workflow
-          commit_message: "Update from official release"
+          commit_message: ${{ env.tas_com }}
 
   copycat32:
     needs: copycat
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Build commit message
+        id: step_one
+        run: |
+          tas_com_tmp1=$(curl https://raw.githubusercontent.com/arendst/Tasmota-firmware/action-master/trigger.txt)
+          tas_com_tmp="Update from https://github.com/arendst/Tasmota/commit/${tas_com_tmp1}"
+          echo "tas_com=$tas_com_tmp" >> $GITHUB_ENV  
       - name: copycat tasmota32
         uses: andstor/copycat-action@v3
         with:
@@ -40,4 +52,4 @@ jobs:
           dst_branch: main
           dst_repo_name: install
           username: workflow
-          commit_message: "Update from official release"
+          commit_message: ${{ env.tas_com }}
