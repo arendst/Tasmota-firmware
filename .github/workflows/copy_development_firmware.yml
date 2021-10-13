@@ -65,7 +65,7 @@ jobs:
            echo ${GITHUB_SHA}  &> trigger.txt
            echo "$(<trigger.txt)"
       - name: Push trigger.txt to start workflow in repo https://github.com/Jason2866/Tasmota-specials
-        uses: dmnemec/copy_file_to_another_repo_action@main
+        uses: Jason2866/copy_file_to_another_repo_action@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
