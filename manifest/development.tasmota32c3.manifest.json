@@ -1,5 +1,5 @@
 {
-  "name": "Tasmota32-C3",
+  "name": "Tasmota32-C3 (english)",
   "builds": [
     {
       "chipFamily": "ESP32-C3",
