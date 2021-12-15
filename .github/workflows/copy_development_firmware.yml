@@ -70,7 +70,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_file: 'trigger.txt'
-          destination_repo: 'Jason2866/Tasmota-specials'
+          destination_repo: 'Jason2866/Tasmota-build'
           destination_branch: 'start_build'
           user_email: 'github-actions@github.com'
           user_name: 'github-actions'
