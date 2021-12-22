@@ -15,7 +15,7 @@ jobs:
       - name: Build commit message
         id: step_one
         run: |
-          tas_com_tmp1=$(curl https://raw.githubusercontent.com/arendst/Tasmota-firmware/action-development/trigger.txt)
+          tas_com_tmp1=$(curl https://raw.githubusercontent.com/arendst/tmp_copy/action-development/trigger.txt)
           tas_com_tmp="Update from https://github.com/arendst/Tasmota/commit/${tas_com_tmp1}"
           echo "tas_com=$tas_com_tmp" >> $GITHUB_ENV  
       - name: copycat tasmota
@@ -39,7 +39,7 @@ jobs:
       - name: Build commit message
         id: step_one
         run: |
-          tas_com_tmp1=$(curl https://raw.githubusercontent.com/arendst/Tasmota-firmware/action-development/trigger.txt)
+          tas_com_tmp1=$(curl https://raw.githubusercontent.com/arendst/tmp_copy/action-development/trigger.txt)
           tas_com_tmp="Update from https://github.com/arendst/Tasmota/commit/${tas_com_tmp1}"
           echo "tas_com=$tas_com_tmp" >> $GITHUB_ENV  
       - name: copycat tasmota32
@@ -62,7 +62,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Creat trigger.txt
         run: |
-           echo ${GITHUB_SHA}  &> trigger.txt
+           echo ${{ github.run_number }}  &> trigger.txt
            echo "$(<trigger.txt)"
       - name: Push trigger.txt to start workflow in repo https://github.com/Jason2866/Tasmota-specials
         uses: Jason2866/copy_file_to_another_repo_action@main
