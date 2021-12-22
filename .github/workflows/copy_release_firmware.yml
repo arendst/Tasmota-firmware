@@ -14,7 +14,7 @@ jobs:
       - name: Build commit message
         id: step_one
         run: |
-          tas_com_tmp1=$(curl https://raw.githubusercontent.com/arendst/Tasmota-firmware/action-master/trigger.txt)
+          tas_com_tmp1=$(curl https://raw.githubusercontent.com/arendst/tmp_copy/action-master/trigger.txt)
           tas_com_tmp="Update from https://github.com/arendst/Tasmota/commit/${tas_com_tmp1}"
           echo "tas_com=$tas_com_tmp" >> $GITHUB_ENV  
       - name: copycat tasmota
@@ -38,7 +38,7 @@ jobs:
       - name: Build commit message
         id: step_one
         run: |
-          tas_com_tmp1=$(curl https://raw.githubusercontent.com/arendst/Tasmota-firmware/action-master/trigger.txt)
+          tas_com_tmp1=$(curl https://raw.githubusercontent.com/arendst/tmp_copy/action-master/trigger.txt)
           tas_com_tmp="Update from https://github.com/arendst/Tasmota/commit/${tas_com_tmp1}"
           echo "tas_com=$tas_com_tmp" >> $GITHUB_ENV  
       - name: copycat tasmota32
