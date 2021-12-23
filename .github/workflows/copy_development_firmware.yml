@@ -62,7 +62,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Creat trigger.txt
         run: |
-           echo ${{ github.run_number }}  &> trigger.txt
+           echo ${GITHUB_SHA}  &> trigger.txt
            echo "$(<trigger.txt)"
       - name: Push trigger.txt to start workflow in repo https://github.com/Jason2866/Tasmota-specials
         uses: Jason2866/copy_file_to_another_repo_action@main
