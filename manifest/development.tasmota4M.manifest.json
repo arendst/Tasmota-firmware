@@ -1,5 +1,5 @@
 {
-  "name": "Development Tasmota 4MB (english)",
+  "name": "Development Tasmota for 4MB Flash (english)",
   "home_assistant_domain": "tasmota",
   "new_install_prompt_erase": true,
   "builds": [
