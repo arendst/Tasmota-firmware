@@ -6,6 +6,7 @@
     {
       "chipFamily": "ESP8266",
       "improv": true,
+      "improv": true,
       "parts": [{ "path": "../firmware/tasmota/tasmota-zbbridge.bin", "offset": 0 }]
     }
   ]

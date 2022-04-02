@@ -34,6 +34,7 @@
     },
     {
       "chipFamily": "ESP8266",
+      "improv": true,
       "parts": [{ "path": "../release-firmware/tasmota/tasmota.bin", "offset": 0 }]
     }
   ]

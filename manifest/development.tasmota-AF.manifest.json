@@ -12,6 +12,7 @@
     },
     {
       "chipFamily": "ESP8266",
+      "improv": true,
       "parts": [{ "path": "../firmware/tasmota/languages/tasmota-AF.bin", "offset": 0 }]
     }
   ]
