@@ -5,6 +5,7 @@
   "builds": [
     {
       "chipFamily": "ESP8266",
+      "improv": true,
       "parts": [{ "path": "../release-firmware/tasmota//tasmota-zbbridge.bin", "offset": 0 }]
     }
   ]
