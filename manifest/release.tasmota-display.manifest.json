@@ -5,7 +5,7 @@
   "builds": [
     {
       "chipFamily": "ESP32",
-      "improv": false,
+      "improv": true,
       "parts": [
         { "path": "../release-firmware/tasmota32/tasmota32-display.factory.bin", "offset": 0 }
       ]
