@@ -10,7 +10,7 @@ jobs:
   copycat:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Build commit message
         id: step_one
         run: |
@@ -34,7 +34,7 @@ jobs:
     needs: copycat
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Build commit message
         id: step_one
         run: |
