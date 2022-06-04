@@ -586,6 +586,13 @@
             ]
         },
         {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota32-zbbrdgpro.manifest.json",
+            "name": "Development Tasmota32 Sonoff ZigbeeBridgePro",
+            "chipFamilies": [
+                "ESP32"
+            ]
+        },
+        {
             "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota32-webcam.manifest.json",
             "name": "Development Tasmota32 WebCam (english)",
             "chipFamilies": [
