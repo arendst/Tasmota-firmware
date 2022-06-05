@@ -1,5 +1,5 @@
 {
-    "name": "Development Tasmota32 Sonoff ZigbeeBridgePro",
+    "name": "Tasmota32 Sonoff ZigbeeBridgePro",
     "new_install_prompt_erase": true,
     "funding_url": "https://paypal.me/tasmota",
     "builds": [

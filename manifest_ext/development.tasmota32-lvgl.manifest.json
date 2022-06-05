@@ -1,5 +1,5 @@
 {
-    "name": "Development Tasmota32 LVGL (english)",
+    "name": "Tasmota32 LVGL",
     "new_install_prompt_erase": true,
     "funding_url": "https://paypal.me/tasmota",
     "builds": [

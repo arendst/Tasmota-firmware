@@ -1,5 +1,5 @@
 {
-    "name": "Development Tasmota GR",
+    "name": "Tasmota GR",
     "new_install_prompt_erase": true,
     "funding_url": "https://paypal.me/tasmota",
     "builds": [
