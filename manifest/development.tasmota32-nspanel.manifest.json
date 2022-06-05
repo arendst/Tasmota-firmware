@@ -1,5 +1,5 @@
 {
-  "name": "Development Tasmota32 Sonoff NsPanel",
+  "name": "Tasmota32 Sonoff NsPanel",
   "new_install_prompt_erase": true,
   "funding_url": "https://paypal.me/tasmota",
   "builds": [

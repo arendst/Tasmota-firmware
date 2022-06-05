@@ -1,11 +1,10 @@
 {
-  "name": "Release Tasmota Zbbridge",
+  "name": "Tasmota Zbbridge",
   "new_install_prompt_erase": true,
   "funding_url": "https://paypal.me/tasmota",
   "builds": [
     {
       "chipFamily": "ESP8266",
-      "improv": true,
       "improv": true,
       "parts": [{ "path": "../release-firmware/tasmota//tasmota-zbbridge.bin", "offset": 0 }]
     }
