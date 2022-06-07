@@ -293,6 +293,15 @@
             "chipFamilies": [
                 "ESP32"
             ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota32-cdc.manifest.json",
+            "name": "Tasmota32-CDC",
+            "chipFamilies": [
+                "ESP32-C3",
+                "ESP32-S2",
+                "ESP32-S3"
+            ]
         }
     ],
     "development": [
