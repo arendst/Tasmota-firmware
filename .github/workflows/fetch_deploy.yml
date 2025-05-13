@@ -102,9 +102,6 @@ jobs:
           [ ! -f ./mv_firmware/firmware/tasmota-minimal.bin ] || rm -rf ./mv_firmware/firmware/tasmota-minimal.bin
           [ ! -f ./mv_firmware/firmware/* ] || mv ./mv_firmware/firmware/* ./firmware/tasmota/languages/
           rm -rf ./mv_firmware
-      - name: Update Manifest files
-        run: |
-          python genManifest.py
       - name: Push updated devel content in branch firmware
         run: |
           COMMIT_SHA=$(curl -s "https://api.github.com/repos/arendst/tasmota/commits/development" | jq -r '.sha')
@@ -152,7 +149,10 @@ jobs:
           [ ! -f ./gh_latest/tasmota-minimal.bin ] || rm -rf ./gh_latest/tasmota-minimal.bin
           [ ! -f ./gh_latest/* ] || mv ./gh_latest/* ./release-firmware/tasmota/languages/
           rm -rf ./gh_latest
-      - name: Push updated master firmwares in branch firmware
+      - name: Update Manifest files (development and release)
+        run: |
+          python genManifest.py
+      - name: Push updated manifests and master firmwares in branch firmware
         run: |
           COMMIT_SHA=$(curl -s "https://api.github.com/repos/arendst/tasmota/commits/master" | jq -r '.sha')
           COMMIT="Firmware built from commit https://github.com/arendst/Tasmota/commit/${COMMIT_SHA}"
