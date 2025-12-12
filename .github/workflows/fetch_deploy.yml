@@ -104,7 +104,7 @@ jobs:
           rm -rf ./mv_firmware
       - name: Push updated devel content in branch firmware
         run: |
-          COMMIT_SHA=$(curl -s "https://api.github.com/repos/arendst/tasmota/commits/development" | jq -r '.sha')
+          COMMIT_SHA=$(gh api repos/arendst/tasmota/commits/development --jq '.sha')
           COMMIT="Firmware built from commit https://github.com/arendst/Tasmota/commit/${COMMIT_SHA}"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
@@ -154,7 +154,7 @@ jobs:
           python genManifest.py
       - name: Push updated manifests and master firmwares in branch firmware
         run: |
-          COMMIT_SHA=$(curl -s "https://api.github.com/repos/arendst/tasmota/commits/master" | jq -r '.sha')
+          COMMIT_SHA=$(gh api repos/arendst/tasmota/commits/master --jq '.sha')
           COMMIT="Firmware built from commit https://github.com/arendst/Tasmota/commit/${COMMIT_SHA}"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
@@ -165,13 +165,14 @@ jobs:
   start_workflow:
     needs: download
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
     steps:
     - name: Dispatch workflow in repo Jason2866/Tasmota-build
       run: |
-        curl -X POST https://api.github.com/repos/Jason2866/Tasmota-build/actions/workflows/Build_special_firmware.yml/dispatches \
-        -H 'Accept: application/vnd.github.everest-preview+json' \
-        -u ${{ secrets.API_TOKEN_GITHUB }} \
-        --data '{"ref": "start_build"}'
+        gh api repos/Jason2866/Tasmota-build/actions/workflows/Build_special_firmware.yml/dispatches \
+          --method POST \
+          -f ref='start_build'
 
   deploy:
     needs: download
