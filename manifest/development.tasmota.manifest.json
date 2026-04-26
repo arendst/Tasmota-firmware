@@ -54,7 +54,7 @@
       "parts": [
         { "path": "../firmware/tasmota32/tasmota32p4r3.factory.bin", "offset": 0 }
       ]
-    }
+    },
     {
       "chipFamily": "ESP32-S2",
       "improv": true,
