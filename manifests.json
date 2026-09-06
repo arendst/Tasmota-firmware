@@ -5,7 +5,13 @@
             "name": "Tasmota",
             "chipFamilies": [
                 "ESP32",
+                "ESP32-C2",
                 "ESP32-C3",
+                "ESP32-C5",
+                "ESP32-C6",
+                "ESP32-P4",
+                "ESP32-P4",
+                "ESP32-S2",
                 "ESP32-S2",
                 "ESP32-S3",
                 "ESP8266"
@@ -156,6 +162,14 @@
             ]
         },
         {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-LT.manifest.json",
+            "name": "Tasmota LT",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
             "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-lite.manifest.json",
             "name": "Tasmota Lite",
             "chipFamilies": [
@@ -270,7 +284,6 @@
             "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-zigbee.manifest.json",
             "name": "Tasmota Zigbee",
             "chipFamilies": [
-                "ESP32",
                 "ESP8266"
             ]
         },
@@ -279,7 +292,9 @@
             "name": "Tasmota for 4MB Flash ",
             "chipFamilies": [
                 "ESP32",
+                "ESP32-C2",
                 "ESP32-C3",
+                "ESP32-C6",
                 "ESP32-S2",
                 "ESP32-S3",
                 "ESP8266"
@@ -319,15 +334,6 @@
             "chipFamilies": [
                 "ESP32"
             ]
-        },
-        {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota32-cdc.manifest.json",
-            "name": "Tasmota32-CDC",
-            "chipFamilies": [
-                "ESP32-C3",
-                "ESP32-S2",
-                "ESP32-S3"
-            ]
         }
     ],
     "development": [
@@ -336,7 +342,13 @@
             "name": "Tasmota",
             "chipFamilies": [
                 "ESP32",
+                "ESP32-C2",
                 "ESP32-C3",
+                "ESP32-C5",
+                "ESP32-C6",
+                "ESP32-P4",
+                "ESP32-P4",
+                "ESP32-S2",
                 "ESP32-S2",
                 "ESP32-S3",
                 "ESP8266"
@@ -479,6 +491,14 @@
             ]
         },
         {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-LT.manifest.json",
+            "name": "Tasmota LT",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
             "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-lite.manifest.json",
             "name": "Tasmota Lite",
             "chipFamilies": [
@@ -594,6 +614,7 @@
             "name": "Tasmota for 4MB Flash ",
             "chipFamilies": [
                 "ESP32",
+                "ESP32-C2",
                 "ESP32-C3",
                 "ESP32-S2",
                 "ESP32-S3",
@@ -640,15 +661,6 @@
             "name": "Tasmota32 WebCam",
             "chipFamilies": [
                 "ESP32"
-            ]
-        },
-        {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota32-cdc.manifest.json",
-            "name": "Tasmota32-CDC",
-            "chipFamilies": [
-                "ESP32-C3",
-                "ESP32-S2",
-                "ESP32-S3"
             ]
         }
     ]
