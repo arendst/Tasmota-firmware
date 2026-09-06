@@ -1,0 +1,27 @@
+{
+    "name": "Tasmota FY",
+    "new_install_prompt_erase": true,
+    "funding_url": "https://paypal.me/tasmota",
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "improv": true,
+            "parts": [
+                {
+                    "path": "https://arendst.github.io/Tasmota-firmware/release-firmware/tasmota32/languages/tasmota32-FY.factory.bin",
+                    "offset": 0
+                }
+            ]
+        },
+        {
+            "chipFamily": "ESP8266",
+            "improv": true,
+            "parts": [
+                {
+                    "path": "https://arendst.github.io/Tasmota-firmware/release-firmware/tasmota/languages/tasmota-FY.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Tasmota32 Bluetooth ",
+    "new_install_prompt_erase": true,
+    "funding_url": "https://paypal.me/tasmota",
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "improv": true,
+            "parts": [
+                {
+                    "path": "https://arendst.github.io/Tasmota-firmware/firmware/tasmota32/tasmota32-bluetooth.factory.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}
