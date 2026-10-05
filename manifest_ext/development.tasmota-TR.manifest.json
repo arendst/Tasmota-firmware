@@ -1,0 +1,27 @@
+{
+    "name": "Tasmota TR",
+    "new_install_prompt_erase": true,
+    "funding_url": "https://paypal.me/tasmota",
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "improv": true,
+            "parts": [
+                {
+                    "path": "https://arendst.github.io/Tasmota-firmware/firmware/tasmota32/languages/tasmota32-TR.factory.bin",
+                    "offset": 0
+                }
+            ]
+        },
+        {
+            "chipFamily": "ESP8266",
+            "improv": true,
+            "parts": [
+                {
+                    "path": "https://arendst.github.io/Tasmota-firmware/firmware/tasmota/languages/tasmota-TR.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}
