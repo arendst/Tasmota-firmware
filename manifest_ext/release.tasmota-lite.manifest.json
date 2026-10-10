@@ -9,7 +9,8 @@
             "parts": [
                 {
                     "path": "https://arendst.github.io/Tasmota-firmware/release-firmware/tasmota32/tasmota32.factory.bin",
-                    "offset": 0
+                    "offset": 0,
+                    "size": 2182160
                 }
             ]
         },
@@ -19,7 +20,8 @@
             "parts": [
                 {
                     "path": "https://arendst.github.io/Tasmota-firmware/release-firmware/tasmota/tasmota-lite.bin",
-                    "offset": 0
+                    "offset": 0,
+                    "size": 519088
                 }
             ]
         }
