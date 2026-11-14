@@ -1,0 +1,27 @@
+{
+    "name": "Tasmota Sensors",
+    "new_install_prompt_erase": true,
+    "funding_url": "https://paypal.me/tasmota",
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "improv": true,
+            "parts": [
+                {
+                    "path": "https://arendst.github.io/Tasmota-firmware/firmware/tasmota32/tasmota32.factory.bin",
+                    "offset": 0
+                }
+            ]
+        },
+        {
+            "chipFamily": "ESP8266",
+            "improv": true,
+            "parts": [
+                {
+                    "path": "https://arendst.github.io/Tasmota-firmware/firmware/tasmota/tasmota-sensors.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}

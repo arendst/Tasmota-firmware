@@ -1,0 +1,19 @@
+{
+  "name": "Tasmota AF",
+  "new_install_prompt_erase": true,
+  "funding_url": "https://paypal.me/tasmota",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "improv": true,
+      "parts": [
+        { "path": "../release-firmware/tasmota32/languages/tasmota32-AF.factory.bin", "offset": 0 }
+      ]
+    },
+    {
+      "chipFamily": "ESP8266",
+      "improv": true,
+      "parts": [{ "path": "../release-firmware/tasmota/languages/tasmota-AF.bin", "offset": 0 }]
+    }
+  ]
+}
