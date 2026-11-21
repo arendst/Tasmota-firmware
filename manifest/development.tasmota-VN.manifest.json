@@ -1,0 +1,19 @@
+{
+  "name": "Tasmota VN",
+  "new_install_prompt_erase": true,
+  "funding_url": "https://paypal.me/tasmota",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "improv": true,
+      "parts": [
+        { "path": "../firmware/tasmota32/languages/tasmota32-VN.factory.bin", "offset": 0 }
+      ]
+    },
+    {
+      "chipFamily": "ESP8266",
+      "improv": true,
+      "parts": [{ "path": "../firmware/tasmota/languages/tasmota-VN.bin", "offset": 0 }]
+    }
+  ]
+}
