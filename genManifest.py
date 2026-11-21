@@ -96,7 +96,7 @@ def main(args):
                 continue
             output[line[0]][0].append(getManifestEntry(path.join(path_manifests_ext,file)))
             continue
-        elif name_components[0] == "tasmota32":
+        elif name_components[0].startswith("tasmota32"):
             if len(name_components) > 1 and name_components[1].isupper():
                 output[line[0]][3].append(getManifestEntry(path.join(path_manifests_ext,file))) # language versions last
                 continue
