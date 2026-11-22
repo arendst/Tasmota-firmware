@@ -5,9 +5,70 @@
             "name": "Tasmota",
             "chipFamilies": [
                 "ESP32",
+                "ESP32-C2",
                 "ESP32-C3",
+                "ESP32-C5",
+                "ESP32-C6",
+                "ESP32-C61",
+                "ESP32-P4",
+                "ESP32-P4",
+                "ESP32-S2",
                 "ESP32-S2",
                 "ESP32-S3",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-display.manifest.json",
+            "name": "Tasmota Display",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-ir.manifest.json",
+            "name": "Tasmota IR",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-knx.manifest.json",
+            "name": "Tasmota KNX",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-lite.manifest.json",
+            "name": "Tasmota Lite",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-sensors.manifest.json",
+            "name": "Tasmota Sensors",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-zbbridge.manifest.json",
+            "name": "Tasmota Zbbridge",
+            "chipFamilies": [
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-zigbee.manifest.json",
+            "name": "Tasmota Zigbee",
+            "chipFamilies": [
                 "ESP8266"
             ]
         },
@@ -68,14 +129,6 @@
             ]
         },
         {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-display.manifest.json",
-            "name": "Tasmota Display",
-            "chipFamilies": [
-                "ESP32",
-                "ESP8266"
-            ]
-        },
-        {
             "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-ES.manifest.json",
             "name": "Tasmota ES",
             "chipFamilies": [
@@ -124,24 +177,8 @@
             ]
         },
         {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-ir.manifest.json",
-            "name": "Tasmota IR",
-            "chipFamilies": [
-                "ESP32",
-                "ESP8266"
-            ]
-        },
-        {
             "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-IT.manifest.json",
             "name": "Tasmota IT",
-            "chipFamilies": [
-                "ESP32",
-                "ESP8266"
-            ]
-        },
-        {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-knx.manifest.json",
-            "name": "Tasmota KNX",
             "chipFamilies": [
                 "ESP32",
                 "ESP8266"
@@ -156,8 +193,8 @@
             ]
         },
         {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-lite.manifest.json",
-            "name": "Tasmota Lite",
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-LT.manifest.json",
+            "name": "Tasmota LT",
             "chipFamilies": [
                 "ESP32",
                 "ESP8266"
@@ -220,14 +257,6 @@
             ]
         },
         {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-sensors.manifest.json",
-            "name": "Tasmota Sensors",
-            "chipFamilies": [
-                "ESP32",
-                "ESP8266"
-            ]
-        },
-        {
             "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-TR.manifest.json",
             "name": "Tasmota TR",
             "chipFamilies": [
@@ -256,32 +285,6 @@
             "name": "Tasmota VN",
             "chipFamilies": [
                 "ESP32",
-                "ESP8266"
-            ]
-        },
-        {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-zbbridge.manifest.json",
-            "name": "Tasmota Zbbridge",
-            "chipFamilies": [
-                "ESP8266"
-            ]
-        },
-        {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota-zigbee.manifest.json",
-            "name": "Tasmota Zigbee",
-            "chipFamilies": [
-                "ESP32",
-                "ESP8266"
-            ]
-        },
-        {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota4MB.manifest.json",
-            "name": "Tasmota for 4MB Flash ",
-            "chipFamilies": [
-                "ESP32",
-                "ESP32-C3",
-                "ESP32-S2",
-                "ESP32-S3",
                 "ESP8266"
             ]
         },
@@ -321,12 +324,16 @@
             ]
         },
         {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota32-cdc.manifest.json",
-            "name": "Tasmota32-CDC",
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/release.tasmota4MB.manifest.json",
+            "name": "Tasmota for 4MB Flash ",
             "chipFamilies": [
+                "ESP32",
+                "ESP32-C2",
                 "ESP32-C3",
+                "ESP32-C6",
                 "ESP32-S2",
-                "ESP32-S3"
+                "ESP32-S3",
+                "ESP8266"
             ]
         }
     ],
@@ -336,9 +343,56 @@
             "name": "Tasmota",
             "chipFamilies": [
                 "ESP32",
+                "ESP32-C2",
                 "ESP32-C3",
+                "ESP32-C5",
+                "ESP32-C6",
+                "ESP32-C61",
+                "ESP32-P4",
+                "ESP32-P4",
+                "ESP32-S2",
                 "ESP32-S2",
                 "ESP32-S3",
+                "ESP32-S31",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-display.manifest.json",
+            "name": "Tasmota Display",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-ir.manifest.json",
+            "name": "Tasmota IR",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-lite.manifest.json",
+            "name": "Tasmota Lite",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-sensors.manifest.json",
+            "name": "Tasmota Sensors",
+            "chipFamilies": [
+                "ESP32",
+                "ESP8266"
+            ]
+        },
+        {
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-zbbridge.manifest.json",
+            "name": "Tasmota Zbbridge",
+            "chipFamilies": [
                 "ESP8266"
             ]
         },
@@ -399,14 +453,6 @@
             ]
         },
         {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-display.manifest.json",
-            "name": "Tasmota Display",
-            "chipFamilies": [
-                "ESP32",
-                "ESP8266"
-            ]
-        },
-        {
             "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-ES.manifest.json",
             "name": "Tasmota ES",
             "chipFamilies": [
@@ -455,14 +501,6 @@
             ]
         },
         {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-ir.manifest.json",
-            "name": "Tasmota IR",
-            "chipFamilies": [
-                "ESP32",
-                "ESP8266"
-            ]
-        },
-        {
             "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-IT.manifest.json",
             "name": "Tasmota IT",
             "chipFamilies": [
@@ -479,8 +517,8 @@
             ]
         },
         {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-lite.manifest.json",
-            "name": "Tasmota Lite",
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-LT.manifest.json",
+            "name": "Tasmota LT",
             "chipFamilies": [
                 "ESP32",
                 "ESP8266"
@@ -543,14 +581,6 @@
             ]
         },
         {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-sensors.manifest.json",
-            "name": "Tasmota Sensors",
-            "chipFamilies": [
-                "ESP32",
-                "ESP8266"
-            ]
-        },
-        {
             "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-TR.manifest.json",
             "name": "Tasmota TR",
             "chipFamilies": [
@@ -579,24 +609,6 @@
             "name": "Tasmota VN",
             "chipFamilies": [
                 "ESP32",
-                "ESP8266"
-            ]
-        },
-        {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota-zbbridge.manifest.json",
-            "name": "Tasmota Zbbridge",
-            "chipFamilies": [
-                "ESP8266"
-            ]
-        },
-        {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota4M.manifest.json",
-            "name": "Tasmota for 4MB Flash ",
-            "chipFamilies": [
-                "ESP32",
-                "ESP32-C3",
-                "ESP32-S2",
-                "ESP32-S3",
                 "ESP8266"
             ]
         },
@@ -643,12 +655,15 @@
             ]
         },
         {
-            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota32-cdc.manifest.json",
-            "name": "Tasmota32-CDC",
+            "path": "https://arendst.github.io/Tasmota-firmware/manifest_ext/development.tasmota4M.manifest.json",
+            "name": "Tasmota for 4MB Flash ",
             "chipFamilies": [
+                "ESP32",
+                "ESP32-C2",
                 "ESP32-C3",
                 "ESP32-S2",
-                "ESP32-S3"
+                "ESP32-S3",
+                "ESP8266"
             ]
         }
     ]
