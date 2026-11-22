@@ -40,6 +40,13 @@ def convertJSON(infile, outfile):
         with open(outfile, "w") as f:
             f.write(j)
 
+def chip_family_label(build):
+    label = build['chipFamily']
+    extras = [v for v in (build.get('chipVariant'), build.get('usbInterface')) if v]
+    if extras:
+        label += ' (' + ', '.join(extras) + ')'
+    return label
+
 def getManifestEntry(manifest):
     entry = {}
     with open(manifest) as json_file:
@@ -48,7 +55,9 @@ def getManifestEntry(manifest):
         entry['name'] = data['name']
         entry['chipFamilies'] = []
         for build in data['builds']:
-            entry['chipFamilies'].append(build['chipFamily'])
+            label = chip_family_label(build)
+            if label not in entry['chipFamilies']:
+                entry['chipFamilies'].append(label)
         return entry
 
 
