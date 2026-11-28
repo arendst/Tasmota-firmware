@@ -10,10 +10,10 @@
                 "ESP32-C5",
                 "ESP32-C6",
                 "ESP32-C61",
-                "ESP32-P4",
-                "ESP32-P4",
-                "ESP32-S2",
-                "ESP32-S2",
+                "ESP32-P4 (rev0)",
+                "ESP32-P4 (rev300)",
+                "ESP32-S2 (UART)",
+                "ESP32-S2 (CDC)",
                 "ESP32-S3",
                 "ESP8266"
             ]
@@ -348,10 +348,10 @@
                 "ESP32-C5",
                 "ESP32-C6",
                 "ESP32-C61",
-                "ESP32-P4",
-                "ESP32-P4",
-                "ESP32-S2",
-                "ESP32-S2",
+                "ESP32-P4 (rev0)",
+                "ESP32-P4 (rev300)",
+                "ESP32-S2 (UART)",
+                "ESP32-S2 (CDC)",
                 "ESP32-S3",
                 "ESP32-S31",
                 "ESP8266"
@@ -663,6 +663,7 @@
                 "ESP32-C3",
                 "ESP32-S2",
                 "ESP32-S3",
+                "ESP32-S31",
                 "ESP8266"
             ]
         }
